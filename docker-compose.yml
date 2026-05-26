@@ -1,0 +1,22 @@
+services:
+  bot:
+    build: .
+    container_name: freelance-parser-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    # Expose the YooKassa webhook port. Set WEBHOOK_ENABLED=true in .env
+    # to actually receive payment notifications. The bot only opens the
+    # listener when the env var is on.
+    ports:
+      - "8080:8080"
+    volumes:
+      - bot_data:/app/data
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  bot_data:

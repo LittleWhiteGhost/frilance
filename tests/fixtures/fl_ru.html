@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>FL.ru projects (test fixture)</title></head>
+<body>
+  <main>
+    <!-- Card 1: uses the modern `project-item-N` id selector. -->
+    <div id="project-item-123456" class="b-post">
+      <h2><a href="/projects/123456/">Нужен сайт на Django с админкой</a></h2>
+      <div class="b-post__body">Требуется опытный разработчик Django/DRF для нового проекта. Срок две недели, бюджет обсуждаемый. Подробнее в личных сообщениях.</div>
+      <div class="b-post__price">от 30 000 ₽</div>
+      <span class="b-post__category">Веб-разработка / Backend</span>
+    </div>
+
+    <!-- Card 2: also uses the modern id selector (matching FL.ru's current
+         markup where every project block carries a `project-item-<N>` id). -->
+    <div id="project-item-654321" class="b-post">
+      <h2><a href="https://www.fl.ru/projects/654321/">Логотип для онлайн-школы</a></h2>
+      <div class="b-post__body">Нужен логотип в светлой цветовой гамме. Прилагаю мудборд.</div>
+      <div class="b-post__price">5 000 ₽</div>
+      <span class="b-post__category">Дизайн</span>
+    </div>
+
+    <!-- Sidebar noise that must NOT be parsed as an order. -->
+    <aside>
+      <div class="sidebar-card">это не заказ</div>
+    </aside>
+  </main>
+</body>
+</html>

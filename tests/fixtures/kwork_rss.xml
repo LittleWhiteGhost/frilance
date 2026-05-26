@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Kwork — Новые проекты</title>
+        <link>https://kwork.ru</link>
+        <item>
+            <title>Нужен сайт на Django за 5 000 руб.</title>
+            <link>https://kwork.ru/projects/12345</link>
+            <description>&lt;p&gt;Требуется &lt;b&gt;опытный&lt;/b&gt; разработчик&amp;nbsp;на Django.&lt;/p&gt;</description>
+            <category>Веб-разработка</category>
+            <category>Python</category>
+        </item>
+        <item>
+            <title>Логотип для кофейни</title>
+            <link>https://kwork.ru/projects/67890?utm_source=rss</link>
+            <description>&lt;p&gt;Нужен минималистичный логотип в векторе.&lt;/p&gt;</description>
+            <category>Дизайн</category>
+        </item>
+    </channel>
+</rss>
